@@ -18,10 +18,10 @@ class Wizard:
         print("{} rolls {}...".format(creature.name, creature_roll))
 
         if my_roll >= creature_roll:
-            print("The wizard has handily defeated {}".format(creature.name))
+            print("The wizard {} has handily defeated {}".format(self.name, creature.name))
             return True
         else:
-            print("The wizard has been DEFEATED!!!")
+            print("The wizard {} has been DEFEATED!!!" .format(self.name))
             return False
 
 

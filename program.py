@@ -40,11 +40,14 @@ def game_loop():
             if hero.attack(active_creature):
                 creatures.remove(active_creature)
             else:
-                print("The wizard runs and hides taking time to recover...")
+                print("The wizard {} runs and hides taking time to recover..."
+                      .format(hero.name))
                 time.sleep(5)
-                print("The wizard returns revitalized!")
+                print("The wizard {} returns revitalized!"
+                      .format(hero.name))
         elif cmd == 'r':
-            print('The wizard has become unsure of his power and flees.')
+            print('The wizard {} has become unsure of his power and flees.'
+            .format(hero.name))
         elif cmd == 'l':
             print("The wizard {} takes in the surroundings and sees:"
                   .format(hero.name))
@@ -53,6 +56,9 @@ def game_loop():
         else:
             print('Ok Exiting game. Bye.')
             break
+
+        if not creatures:
+            print("You defeated all the creatures!")
 
         print()
 
