@@ -26,7 +26,9 @@ def game_loop():
         Wizard('Evil Wizard', 1000),
     ]
 
-    hero = Wizard('Gandolf', 75)
+    wizard_name = input('What is your name Wizard?')
+    hero = Wizard(wizard_name, 75)
+    print('Hello wizard {}'.format(wizard_name))
 
     while True:
 
