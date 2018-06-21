@@ -47,7 +47,7 @@ def game_loop():
                       .format(hero.name))
         elif cmd == 'r':
             print('The wizard {} has become unsure of his power and flees.'
-            .format(hero.name))
+                  .format(hero.name))
         elif cmd == 'l':
             print("The wizard {} takes in the surroundings and sees:"
                   .format(hero.name))
